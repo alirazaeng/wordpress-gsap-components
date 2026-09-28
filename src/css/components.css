@@ -1,0 +1,52 @@
+[data-gsap-progress] {
+  position: fixed;
+  inset: 0 auto auto 0;
+  z-index: 9999;
+  width: 100%;
+  height: 3px;
+  transform-origin: left center;
+  pointer-events: none;
+}
+
+.gsap-word {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+[data-gsap-magnetic] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+}
+
+[data-gsap-horizontal] {
+  overflow: hidden;
+}
+
+[data-gsap-horizontal-track] {
+  display: flex;
+  width: max-content;
+}
+
+[data-gsap-horizontal-track] > * {
+  flex: 0 0 auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-gsap-reveal],
+  [data-gsap-stagger-item],
+  [data-gsap-text-reveal],
+  [data-gsap-magnetic],
+  [data-gsap-progress],
+  [data-gsap-horizontal-track] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  [data-gsap-pin] {
+    position: static !important;
+  }
+}
