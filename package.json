@@ -7,10 +7,15 @@
   "license": "MIT",
   "author": "Engineer Ali Raza",
   "scripts": {
+    "build": "node scripts/build.mjs",
     "check": "node scripts/check-syntax.mjs",
+    "ci": "npm run check && npm run build && npm run package:dry-run",
     "package:dry-run": "npm pack --dry-run"
   },
   "dependencies": {
     "gsap": "^3.15.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
   }
 }
