@@ -4,9 +4,9 @@ Reusable, performance-conscious GSAP animation and interaction components for mo
 
 [![Code Quality](https://github.com/alirazaeng/wordpress-gsap-components/actions/workflows/quality.yml/badge.svg)](https://github.com/alirazaeng/wordpress-gsap-components/actions/workflows/quality.yml)
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-7c5cff)](https://alirazaeng.github.io/wordpress-gsap-components/)
+[![Demo](https://img.shields.io/badge/Interactive%20Demo-Deployment%20Ready-7c5cff)](demo/)
 
-**Live demo:** https://alirazaeng.github.io/wordpress-gsap-components/
+**Interactive demo:** the complete demo source is available in [`demo/`](demo/) and the GitHub Pages workflow is deployment-ready.
 
 This project demonstrates how to add polished motion to WordPress without turning animation into a performance, accessibility, or maintenance problem.
 
