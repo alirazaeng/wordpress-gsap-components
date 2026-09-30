@@ -4,10 +4,15 @@ Reusable, performance-conscious GSAP animation and interaction components for mo
 
 [![Code Quality](https://github.com/alirazaeng/wordpress-gsap-components/actions/workflows/quality.yml/badge.svg)](https://github.com/alirazaeng/wordpress-gsap-components/actions/workflows/quality.yml)
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-7c5cff)](https://alirazaeng.github.io/wordpress-gsap-components/)
+
+**Live demo:** https://alirazaeng.github.io/wordpress-gsap-components/
+
 This project demonstrates how to add polished motion to WordPress without turning animation into a performance, accessibility, or maintenance problem.
 
 ## What this repository demonstrates
 
+- interactive GitHub Pages demo powered by the production bundle
 - reusable GSAP component architecture
 - ScrollTrigger integration
 - progressive enhancement
@@ -121,6 +126,12 @@ The recommended workflow is:
 6. add the documented `data-` attributes to your templates/blocks
 
 See [WordPress integration](docs/wordpress-integration.md).
+
+## Live demo architecture
+
+The GitHub Pages site is built from the same production bundle used by the project. Its deployment workflow runs the repository's full CI, rebuilds the browser bundle, assembles the static demo, and then deploys it.
+
+See [Live demo architecture](docs/live-demo.md).
 
 ## Accessibility
 
