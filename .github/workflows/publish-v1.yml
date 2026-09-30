@@ -1,0 +1,50 @@
+name: Publish v1.0.0
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/publish-v1.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Publish v1.0.0
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Build production bundle
+        run: npm run build
+
+      - name: Build release archive
+        run: |
+          mkdir -p release/wordpress-gsap-components
+          cp -R src wordpress docs examples dist release/wordpress-gsap-components/
+          cp README.md CHANGELOG.md RELEASE_NOTES.md LICENSE package.json release/wordpress-gsap-components/
+          cd release
+          zip -r ../wordpress-gsap-components-v1.0.0.zip wordpress-gsap-components
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v1.0.0 >/dev/null 2>&1; then
+            echo "v1.0.0 already exists; nothing to publish."
+            exit 0
+          fi
+
+          gh release create v1.0.0             --target "$GITHUB_SHA"             --title "v1.0.0 — First Stable Release"             --notes-file RELEASE_NOTES.md             --latest             wordpress-gsap-components-v1.0.0.zip
