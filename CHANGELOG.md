@@ -1,5 +1,19 @@
 # Changelog
 
+## [Unreleased]
+
+### Added
+
+- live GitHub Pages demo built from the production bundle
+- Node unit tests for reduced-motion detection and cleanup-stack behavior
+- structured bug-report and feature-request issue forms
+- public live-demo metadata and repository/profile links
+
+### Changed
+
+- GitHub Actions dependencies updated to current maintained major versions
+- quality CI now runs behavioral unit tests in addition to syntax/build/package validation
+
 All notable changes to this project will be documented here.
 
 ## [1.0.0] - 2026-09-30
