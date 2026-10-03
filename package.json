@@ -9,8 +9,9 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "check": "node scripts/check-syntax.mjs",
-    "ci": "npm run check && npm run build && npm run package:dry-run",
-    "package:dry-run": "npm pack --dry-run"
+    "ci": "npm run check && npm test && npm run build && npm run package:dry-run",
+    "package:dry-run": "npm pack --dry-run",
+    "test": "node --test tests/**/*.test.js"
   },
   "dependencies": {
     "gsap": "^3.15.0"

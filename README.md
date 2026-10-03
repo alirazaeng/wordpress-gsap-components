@@ -165,6 +165,7 @@ See [Performance guidance](docs/performance.md).
 GitHub Actions validates:
 
 - JavaScript syntax
+- Node unit tests for motion and cleanup utilities
 - production bundling
 - package contents
 - PHP syntax for the WordPress integration example
