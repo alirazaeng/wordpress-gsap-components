@@ -1,5 +1,4 @@
-# Live Demo
-
+# Live Demo\n\n**Public URL:** https://alirazaeng.github.io/wordpress-gsap-components/\n
 The live demo is a static GitHub Pages site that exercises the repository's real production bundle.
 
 ## What the demo proves

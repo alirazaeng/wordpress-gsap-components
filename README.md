@@ -2,9 +2,9 @@
 
 Reusable, performance-conscious GSAP animation and interaction components for modern WordPress frontends.
 
-[![Code Quality](https://github.com/alirazaeng/wordpress-gsap-components/actions/workflows/quality.yml/badge.svg)](https://github.com/alirazaeng/wordpress-gsap-components/actions/workflows/quality.yml) [![Release](https://img.shields.io/github/v/release/alirazaeng/wordpress-gsap-components?label=release)](https://github.com/alirazaeng/wordpress-gsap-components/releases/latest) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Demo](https://img.shields.io/badge/Interactive%20Demo-Deployment%20Ready-7c5cff)](demo/)
+[![Code Quality](https://github.com/alirazaeng/wordpress-gsap-components/actions/workflows/quality.yml/badge.svg)](https://github.com/alirazaeng/wordpress-gsap-components/actions/workflows/quality.yml) [![Release](https://img.shields.io/github/v/release/alirazaeng/wordpress-gsap-components?label=release)](https://github.com/alirazaeng/wordpress-gsap-components/releases/latest) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-7c5cff)](https://alirazaeng.github.io/wordpress-gsap-components/)
 
-**Interactive demo:** the complete demo source is available in [`demo/`](demo/) and the GitHub Pages workflow is deployment-ready.
+**Live demo:** https://alirazaeng.github.io/wordpress-gsap-components/\n\nThe demo is deployed from the same production bundle built and validated by this repository.
 
 This project demonstrates how to add polished motion to WordPress without turning animation into a performance, accessibility, or maintenance problem.
 
