@@ -1,0 +1,31 @@
+name: Feature request
+description: Propose a reusable animation, accessibility, performance, or WordPress integration improvement.
+title: "[Feature]: "
+labels: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What real frontend or WordPress problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed approach
+      description: Describe the API, data attribute, behavior, or integration you have in mind.
+    validations:
+      required: true
+  - type: textarea
+    id: accessibility
+    attributes:
+      label: Accessibility and reduced-motion considerations
+      description: Explain how the feature should behave when motion is reduced or JavaScript is unavailable.
+    validations:
+      required: true
+  - type: textarea
+    id: performance
+    attributes:
+      label: Performance considerations
+      description: Note expected ScrollTrigger usage, lifecycle/cleanup requirements, or asset-loading impact.
